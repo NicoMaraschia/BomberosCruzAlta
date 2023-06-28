@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BOMBEROS CRUZ ALTA</title>
+  <style>
+    body {
+      background-image: url("D:/usuarios/alumno/escritorio/Bomberos Cruz Alta/ImgFormulario.jpg");
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      font-size: 48px;
+      color: rgb(245, 245, 245);
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    form {
+      background-color: rgba(255, 145, 0, 0.8);
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      font-size: 20px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      font-size: 20px;
+      padding: 10px;
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>BOMBEROS VOLUNTARIOS</h1>
+  <form action="procesar_formulario.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+    
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
